@@ -3,14 +3,14 @@ spring:
     gateway:
       routes:
         - id: profilesPrincipal
-          uri: http://influencers-profiles
+          uri: http://profiles
           predicates:
             - Path=/api/v1/influencers/me, /api/v1/brands/me
             - Method=GET,PUT,PATCH,DELETE
           filters:
             - AddPrincipalToPathFilter
         - id: profiles
-          uri: http://influencers-profiles
+          uri: http://profiles
           predicates:
             - Path=/api/v1/influencers/*/*, /api/v1/influencers/search/**,  /api/v1/profiles/api-doc
         - id: campaign-manager
