@@ -27,7 +27,7 @@ spring:
         - id: profilesPrincipal
           uri: http://localhost:8080
           predicates:
-            - Path=/api/v1/influencers/me, /api/v1/brands/me
+            - Path=/api/v1/influencers/me, /api/v1/influencers/me/followersCount, /api/v1/influencers/me/externalReferences, /api/v1/brands/me
             - Method=GET,PUT,PATCH,DELETE
           filters:
             - AddPrincipalToPathFilter
@@ -35,6 +35,7 @@ spring:
           uri: http://localhost:8080
           predicates:
             - Path=/api/v1/influencers/*/*, /api/v1/influencers/search/**,  /api/v1/profiles/api-doc
+            - Method=GET
         - id: campaign-manager
           uri: http://localhost:8086
           predicates:
