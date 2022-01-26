@@ -58,6 +58,7 @@ spring:
           uri: http://localhost:8086
           predicates:
             - Path=/api/v1/*/*/description
+            - Method=GET,PUT,PATCH
           filters:
             - RewritePath=/api/v1/pitches/(?<path>.*)/description, /api/v1/description//$\{path}/
         - id: multimedia
