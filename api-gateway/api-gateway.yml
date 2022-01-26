@@ -54,6 +54,12 @@ spring:
             - Method=POST
           filters:
             - AddPrincipalToPathFilter
+        - id: descriptions
+          uri: http://localhost:8086
+          predicates:
+            - Path=/api/v1/*/*/description
+          filters:
+            - RewritePath=/api/v1/pitches/(?<path>.*)/description, /api/v1/description//$\{path}/
         - id: multimedia
           uri: http://localhost:8097
           predicates:
