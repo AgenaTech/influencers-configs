@@ -24,6 +24,7 @@ spring:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 profiles:
   url: http://localhost:8080
+  ratings-url: api/v1/ratings
 management:
   endpoints:
     web:
