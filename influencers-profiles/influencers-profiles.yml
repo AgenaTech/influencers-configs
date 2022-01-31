@@ -23,8 +23,8 @@ spring:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 external-hal-links:
   influencers:
-    my-campaigns: /api/v1/campaigns/search/by-influencer?{?influencerId,lifecycleStatus,page,size,sort}
-    search-public-briefs: /api/v1/briefs/search/by-brand-price?{?brandId,minPrice,maxPrice,isForEveryone,page,size,sort}
+    influencerCampaigns: /api/v1/campaigns/search/by-influencer{?influencerId,lifecycleStatus,page,size,sort}
+    searchPublicBriefs: /api/v1/briefs/search/by-brand-price{?brandId,minPrice,maxPrice,isForEveryone,page,size,sort}
 management:
   endpoints:
     web:
