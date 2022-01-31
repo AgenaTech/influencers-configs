@@ -22,10 +22,9 @@ spring:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 external-hal-links:
-  links:
-    brief1-requests: /api/v1/brief-influencers/search/by-brand-lcs1
-    brief-requests: /api/v1/brief-influencers/search/by-brand-lcs
-
+  influencers:
+    my-campaigns: /api/v1/campaigns/search/by-influencer?{?influencerId,lifecycleStatus,page,size,sort}
+    search-public-briefs: /api/v1/briefs/search/by-brand-price?{?brandId,minPrice,maxPrice,isForEveryone,page,size,sort}
 management:
   endpoints:
     web:
