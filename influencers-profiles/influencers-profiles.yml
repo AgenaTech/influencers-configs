@@ -26,6 +26,9 @@ external-hal-links:
     influencerCampaigns: /api/v1/campaigns/search/by-influencer{?influencerId,lifecycleStatus,page,size,sort}
     searchPublicBriefs: /api/v1/briefs/search/by-brand-price{?brandId,minPrice,maxPrice,isForEveryone,page,size,sort}
     briefRequests: /api/v1/brief-influencers/search/by-influencer-lcs{?influencerId,lifecycleStatus,page,size,sort}
+  brands:
+    briefRequests: /api/v1/brief-influencers/search/by-brand-lcs{?brandId,lifecycleStatus,page,size,sort}
+    brandCampaigns: /api/v1/campaigns/search/by-brand{?brandId,lifecycleStatus,page,size,sort}
 management:
   endpoints:
     web:
