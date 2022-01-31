@@ -23,8 +23,8 @@ spring:
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 external-hal-links:
   links:
-    - brief1-requests: /api/v1/brief-influencers/search/by-brand-lcs1
-    - brief-requests: /api/v1/brief-influencers/search/by-brand-lcs
+    brief1-requests: /api/v1/brief-influencers/search/by-brand-lcs1
+    brief-requests: /api/v1/brief-influencers/search/by-brand-lcs
 
 management:
   endpoints:
