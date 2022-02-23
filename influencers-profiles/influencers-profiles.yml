@@ -36,6 +36,9 @@ management:
       exposure:
         include: '*'
 springdoc.api-docs.path: /api/v1/profiles/api-doc
+health:
+  config:
+    enabled: false
 logging:
   level:
     com.agenatech: DEBUG

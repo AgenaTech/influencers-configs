@@ -30,6 +30,9 @@ management:
     web:
       exposure:
         include: '*'
+health:
+  config:
+    enabled: false
 springdoc.api-docs.path: /api/v1/campaign-manager/api-doc
 logging:
   level:
