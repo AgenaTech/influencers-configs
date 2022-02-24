@@ -28,7 +28,7 @@ external-hal-links:
     briefRequests: /api/v1/briefs/search/by-influencer-lcs{?influencerId,lifecycleStatus,page,size,sort}
     publishedPitches: /api/v1/pitches/search/by-influencer-lcs{?influencerId,lifecycleStatus,page,size,sort}
   brands:
-    briefRequests: /api/v1/brief-influencers/search/by-brand-lcs{?brandId,lifecycleStatus,page,size,sort}
+    briefRequests: /api/v1/briefs/search/by-brand-lcs{?brandId,lifecycleStatus,page,size,sort}
     brandCampaigns: /api/v1/campaigns/search/by-brand{?brandId,lifecycleStatus,page,size,sort}
     pitchRequests: /api/v1/pitchBrands/search/by-brand-lcs{?brandId,lifecycleStatus,page,size,sort}
 management:
