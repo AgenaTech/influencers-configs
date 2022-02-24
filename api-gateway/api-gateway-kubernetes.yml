@@ -32,10 +32,10 @@ spring:
             - Method=POST
           filters:
             - AddPrincipalToPathFilter
-        - id: getBrands
+        - id: getEntities
           uri: http://profiles
           predicates:
-            - Path=/api/v1/brands/**
+            - Path=/api/v1/brands/**, /api/v1/campaigns/**
             - Method=GET
         - id: descriptions
           uri: http://campaign-manager
