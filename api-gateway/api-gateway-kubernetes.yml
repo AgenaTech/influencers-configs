@@ -21,6 +21,13 @@ spring:
           predicates:
             - Path=/api/v1/influencers/*/*, /api/v1/influencers/search/**, /api/v1/brands/search/**, /api/v1/profiles/api-doc
             - Method=GET
+        - id: descriptions
+          uri: http://campaign-manager
+          predicates:
+            - Path=/api/v1/*/*/description
+            - Method=GET,PUT,PATCH
+          filters:
+            - RewritePath=/api/v1/(?<entity>.*)/(?<path>.*)/description, /api/v1/description//$\{path}/
         - id: campaign-manager
           uri: http://campaign-manager
           predicates:
@@ -42,13 +49,6 @@ spring:
           predicates:
             - Path=/api/v1/campaigns/**
             - Method=GET
-        - id: descriptions
-          uri: http://campaign-manager
-          predicates:
-            - Path=/api/v1/*/*/description
-            - Method=GET,PUT,PATCH
-          filters:
-            - RewritePath=/api/v1/(?<entity>.*)/(?<path>.*)/description, /api/v1/description//$\{path}/
         - id: multimedia
           uri: http://multimedia-manager
           predicates:
