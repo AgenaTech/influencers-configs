@@ -1,0 +1,28 @@
+server:
+  port: 8087
+spring:
+  oauth2:
+    resourceserver:
+      jwt:
+        issuer-uri: http://localhost:8180/auth/realms/influencers-com
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+        loggerLevel: basic
+profiles.url: http://localhost:8080
+youtube.url: https://www.googleapis.com
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+health:
+  config:
+    enabled: false
+springdoc.api-docs.path: /api/v1/social-media-adapter/api-doc
+logging:
+  level:
+    com.agenatech: DEBUG
