@@ -1,2 +1,4 @@
-spring.oauth2.resourceserver.jwt.issuer-uri: https://auth-dev.agenadev.com/auth/realms/influencers-com
 profiles.url: http://profiles
+auth:
+  url: https://auth-dev.agenadev.com
+  realm: influencers-com
