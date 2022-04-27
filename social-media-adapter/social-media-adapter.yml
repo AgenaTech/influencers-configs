@@ -33,3 +33,4 @@ logging:
   level:
     com.agenatech: DEBUG
     org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
