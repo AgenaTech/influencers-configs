@@ -42,8 +42,8 @@ spring:
         - id: campaignsPrincipal
           uri: http://campaign-manager
           predicates:
-            - Path=/api/v1/commands/me/**, /api/v1/commands/influencers/me/**, /api/v1/commands/brands/me/**
-            - Method=POST
+            - Path=/api/v1/commands/me/**, /api/v1/commands/influencers/me/**, /api/v1/commands/brands/me/**, /api/v1/count/me/**
+            - Method=POST,GET
           filters:
             - AddPrincipalToPathFilter
         - id: getEntitiesProfiles
@@ -54,7 +54,7 @@ spring:
         - id: getEntitiesCampaigns
           uri: http://campaign-manager
           predicates:
-            - Path=/api/v1/campaigns/**, /api/v1/count/**
+            - Path=/api/v1/campaigns/**
             - Method=GET
         - id: multimedia
           uri: http://multimedia-manager
