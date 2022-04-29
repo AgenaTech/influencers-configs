@@ -23,6 +23,9 @@ spring:
     hibernate:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+external-hal-links:
+  campaigns:
+    brands: /api/v1/campaigns/{?campaignId}/brands
 profiles:
   url: http://localhost:8080
   ratings-url: api/v1/ratings
