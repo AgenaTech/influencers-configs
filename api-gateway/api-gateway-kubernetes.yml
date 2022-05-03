@@ -23,6 +23,11 @@ spring:
             - Method=POST
           filters:
             - AddPrincipalToPathFilter
+        - id: social-media-adapter-api-doc
+          uri: http://social-media-adapter
+          predicates:
+            - Path=/api/v1/social-media-adapter/api-doc
+            - Method=GET
         - id: profiles
           uri: http://profiles
           predicates:

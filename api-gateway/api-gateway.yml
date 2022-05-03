@@ -54,6 +54,11 @@ spring:
             - Method=POST
           filters:
             - AddPrincipalToPathFilter
+        - id: social-media-adapter-api-doc
+          uri: http://localhost:8087
+          predicates:
+            - Path=/api/v1/social-media-adapter/api-doc
+            - Method=GET
         - id: profiles
           uri: http://localhost:8080
           predicates:
@@ -116,6 +121,7 @@ management:
     web:
       exposure:
         include: '*'
+
 health:
   config:
     enabled: false
