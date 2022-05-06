@@ -38,7 +38,7 @@ spring:
         - id: campaign-manager
           uri: http://campaign-manager
           predicates:
-            - Path=/api/v1/comments/**, /api/v1/brief-influencers, /api/v1/brief-influencers/**, /api/v1/brief-influencers/search/**, /api/v1/briefs/**, /api/v1/briefs, /api/v1/briefs/search/**, /api/v1/campaigns/search/**, /api/v1/pitchBrands/**, /api/v1/pitchBrands/search/**, /api/v1/pitches, /api/v1/pitches/search/**, /api/v1/ratings/search/**, /api/v1/drafts/**, /api/v1/campaign-manager/api-doc
+            - Path=/api/v1/comments/**, /api/v1/brief-influencers, /api/v1/brief-influencers/**, /api/v1/brief-influencers/search/**, /api/v1/briefs/**, /api/v1/briefs, /api/v1/briefs/search/**, /api/v1/campaigns/search/**, /api/v1/pitchBrands/**, /api/v1/pitchBrands/search/**, /api/v1/pitches, /api/v1/pitches/**, /api/v1/pitches/search/**, /api/v1/ratings/search/**, /api/v1/drafts/**, /api/v1/campaign-manager/api-doc
         - id: campaignsPrincipal
           uri: http://campaign-manager
           predicates:
