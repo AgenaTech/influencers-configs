@@ -40,13 +40,6 @@ spring:
             - Method=GET,PUT,PATCH,DELETE
           filters:
             - AddPrincipalToPathFilter
-        - id: profilesDataPrincipal
-          uri: http://localhost:8080
-          predicates:
-            - Path=/api/v1/influencers/me/externalReferences
-            - Method=GET
-          filters:
-            - AddPrincipalToPathFilter
         - id: social-media-adapter
           uri: http://localhost:8087
           predicates:
