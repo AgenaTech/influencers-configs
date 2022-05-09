@@ -44,13 +44,13 @@ spring:
           uri: http://localhost:8080
           predicates:
             - Path=/api/v1/influencers/me/externalReferences
-            - Method=GET,POST
+            - Method=GET
           filters:
             - AddPrincipalToPathFilter
         - id: social-media-adapter
           uri: http://localhost:8087
           predicates:
-            - Path=/api/v1/influencers/me/followersCount
+            - Path=/api/v1/influencers/me/followersCount, /api/v1/influencers/me/externalReferences
             - Method=POST
           filters:
             - AddPrincipalToPathFilter
