@@ -1,5 +1,6 @@
 server:
   port: 8081
+
 security-constraints:
   open-uri:
     - /actuator/**
@@ -7,12 +8,14 @@ security-constraints:
     - /webjars/swagger-ui/**
     - /swagger-ui**
     - /v3/api-docs/**
+
 cors:
   allowedOrigins: "*"
   allowedMethods: "*"
   allowedHeaders: "*"
   allowedCredentials: true
   maxAge: "3600"
+
 spring:
   cloud:
     gateway:
@@ -119,10 +122,21 @@ management:
 health:
   config:
     enabled: false
+
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
     org.springframework.security: DEBUG
     reactor.netty.http.client: DEBUG
+
 springdoc:
-  packagesToScan: com.agenatech
+  packages-to-scan: com.agenatech
+  custom:
+    ignored-routes:
+      - profilesPrincipal
+      - profilesDataPrincipal
+      - descriptions
+      - campaignsPrincipal
+      - getEntitiesProfiles
+      - getEntitiesCampaigns
+      - openapi
