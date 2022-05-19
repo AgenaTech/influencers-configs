@@ -59,5 +59,6 @@ spring:
             - Path=/v3/api-docs/**
           filters:
             - RewritePath=/v3/api-docs/(?<path>.*), /api/v1//$\{path}/api-doc
+#    todo set prod DNS
 keycloak-client:
   server-url: https://auth-dev.agenadev.com/auth

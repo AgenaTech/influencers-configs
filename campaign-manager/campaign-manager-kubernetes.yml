@@ -2,8 +2,9 @@ server:
   port: 8080
 spring:
   datasource:
+#    todo set prod endpoint
     url: jdbc:postgresql://agenatech-2.cbxabex1bwiq.eu-north-1.rds.amazonaws.com:5432/campaign-manager?ssl=false
     username: postgres
-    password: '{cipher}d0a1612fe2e66a648757a4726cf577501f596b6f6816a7eaf055b87dc3dd030bbf263d97f3976c62f877b900af366c9e'
+    password: '{cipher}fe810f8e3f0b32a636654b3516bf7087abe0a3ce62c4f9d037954bcc9769cebe33b02f8312f7c320caf513b0745ba113'
 profiles:
   url: http://profiles
