@@ -1,5 +1,6 @@
 server:
   forward-headers-strategy: framework
+  connection-timeout: 5s
 spring:
   data.rest.base-path: api/v1
   datasource:
@@ -21,12 +22,27 @@ spring:
     hibernate:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+external-hal-links:
+  influencers:
+    influencerCampaigns: /api/v1/campaigns/search/by-influencer{?influencerId,lifecycleStatus,page,size,sort}
+    searchPublicBriefs: /api/v1/briefs/search/by-brand-price{?brandId,minPrice,maxPrice,isForEveryone,page,size,sort}
+    briefRequests: /api/v1/briefs/search/by-influencer-lcs{?influencerId,lifecycleStatus,page,size,sort}
+    publishedPitches: /api/v1/pitches/search/by-influencer-lcs{?influencerId,lifecycleStatus,page,size,sort}
+    pitchesCount: /api/v1/count/me/pitches
+    campaignsCount: /api/v1/count/me/campaigns
+  brands:
+    briefRequests: /api/v1/briefs/search/by-brand-lcs{?brandId,lifecycleStatus,page,size,sort}
+    brandCampaigns: /api/v1/campaigns/search/by-brand{?brandId,lifecycleStatus,page,size,sort}
+    pitchRequests: /api/v1/pitches/search/by-brand-lcs{?brandId,lifecycleStatus,page,size,sort}
 management:
   endpoints:
     web:
       exposure:
         include: '*'
 springdoc.api-docs.path: /api/v1/profiles/api-doc
+health:
+  config:
+    enabled: false
 logging:
   level:
     com.agenatech: DEBUG

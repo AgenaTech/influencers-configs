@@ -1,0 +1,4 @@
+profiles.url: http://profiles
+auth:
+  url: https://auth-dev.agenadev.com
+  realm: influencers-com
