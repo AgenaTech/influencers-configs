@@ -35,7 +35,7 @@ health:
 springdoc.api-docs.path: /api/v1/campaign-manager/api-doc
 logging:
   level:
-    com.agenatech: DEBUG
+    com.agenatech: INFO
 
 
 

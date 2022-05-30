@@ -119,9 +119,9 @@ health:
 
 logging:
   level:
-    org.springframework.cloud.gateway: DEBUG
-    org.springframework.security: DEBUG
-    reactor.netty.http.client: DEBUG
+    org.springframework.cloud.gateway: INFO
+    org.springframework.security: INFO
+    reactor.netty.http.client: INFO
 
 springdoc:
   packages-to-scan: com.agenatech

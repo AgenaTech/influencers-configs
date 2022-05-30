@@ -45,6 +45,6 @@ health:
     enabled: false
 logging:
   level:
-    com.agenatech: DEBUG
+    com.agenatech: INFO
 
 
