@@ -1,5 +1,4 @@
 profiles.url: http://profiles
 auth:
-#  todo change
-  url: https://auth-dev.agenadev.com
+  url: https://authentication-dev.theinfluencers.com/auth
   realm: influencers-com

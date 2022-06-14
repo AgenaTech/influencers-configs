@@ -59,6 +59,5 @@ spring:
             - Path=/v3/api-docs/**
           filters:
             - RewritePath=/v3/api-docs/(?<path>.*), /api/v1//$\{path}/api-doc
-# todo change
 keycloak-client:
-  server-url: https://auth-dev.agenadev.com/auth
+  server-url: https://authentication-dev.theinfluencers.com/auth
