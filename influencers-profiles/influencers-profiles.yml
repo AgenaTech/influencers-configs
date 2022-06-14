@@ -12,11 +12,7 @@ spring:
       hibernate:
         generate_statistics: true
         cache:
-          use_second_level_cache: true
-          region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
-          queries: true
-          ehcache:
-            missing_cache_strategy: create
+          use_second_level_cache: false
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
     show-sql: true
     hibernate:
