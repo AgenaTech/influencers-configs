@@ -2,4 +2,4 @@ spring:
   datasource:
     url: jdbc:postgresql://database-dev.cusdxsftolnc.eu-north-1.rds.amazonaws.com:5432/influencers-profiles?ssl=false
     username: postgres
-    password: '{cipher}33816bd37a08f3269bb6b4cb20621373c14a6e54314281ac4fe1ad00b04d70b915c5d3d6e7c540ec8ea19988655a441f%'
+    password: '{cipher}80b992ff695be1018a75becadb9f8ec4d87de4d2efe673d7ed31a921d9ffe4f4508c794ed487b7268c0b410e8cc8f8ab'
