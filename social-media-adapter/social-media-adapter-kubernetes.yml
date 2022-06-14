@@ -1,5 +1,4 @@
 profiles.url: http://profiles
 auth:
-#  todo set prod DNS
-  url: https://auth-dev.agenadev.com
+  url: https://authentication.theinfluencers.com/auth/
   realm: influencers-com
