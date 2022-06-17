@@ -28,6 +28,8 @@ profiles:
 
 notifications:
   url: http://localhost:8080
+  email-url: /api/v1/emails
+  push-url: /api/v1/notifications
   email-templates:
     new-comment-template: "d-1baa6de59a3a439e9fb5b5a6bc8bfde8"
     new-pitch-template: "d-fdb2c6e88ea64b0e8f7db16abdd0e0e9"
