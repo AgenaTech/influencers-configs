@@ -46,7 +46,7 @@ spring:
         - id: social-media-adapter
           uri: http://localhost:8087
           predicates:
-            - Path=/api/v1/influencers/me/followersCount, /api/v1/influencers/me/externalReferences, /api/v1/social-media-adapter/api-doc
+            - Path=/api/v1/influencers/me/*/followers-count, /api/v1/influencers/me/*/user-id, /api/v1/social-media-adapter/api-doc
             - Method=POST,GET
           filters:
             - AddPrincipalToPathFilter
