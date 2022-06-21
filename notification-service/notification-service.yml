@@ -21,7 +21,7 @@ spring:
 logging:
   level:
     root: DEBUG
-springdoc.api-docs.path: /api/v1/notifications/api-doc
+springdoc.api-docs.path: /api/v1/notification-service/api-doc
 management:
   endpoints:
     web:
