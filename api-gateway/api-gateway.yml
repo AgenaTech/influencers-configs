@@ -86,8 +86,15 @@ spring:
         - id: notification-service
           uri: http://localhost:9095
           predicates:
-            - Path=/api/v1/notifications, /api/v1/notifications/**, /api/v1/emails, /api/v1/notifications/api-doc
-            - Method=GET,POST
+            - Path=/api/v1/notifications, /api/v1/emails, /api/v1/notifications/api-doc
+            - Method=POST
+        - id: notification-service-me
+          uri: http://localhost:9095
+          predicates:
+            - Path=/api/v1/notifications/me/device-token
+            - Method=POST
+          filters:
+            - AddPrincipalToPathFilter
   security:
     oauth2:
       client:

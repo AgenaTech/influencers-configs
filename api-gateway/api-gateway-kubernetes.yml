@@ -62,7 +62,14 @@ spring:
         - id: notification-service
           uri: http://notification-service
           predicates:
-            - Path=/api/v1/notifications, /api/v1/notifications/**, /api/v1/emails, /api/v1/notifications/api-doc
-            - Method=GET,POST
+            - Path=/api/v1/notifications, /api/v1/emails, /api/v1/notifications/api-doc
+            - Method=POST
+        - id: notification-service-me
+          uri: http://notification-service
+          predicates:
+            - Path=/api/v1/notifications/me/device-token
+            - Method=POST
+          filters:
+            - AddPrincipalToPathFilter
 keycloak-client:
   server-url: https://authentication-dev.theinfluencers.com/auth
