@@ -18,9 +18,15 @@ spring:
     time-zone: UTC
   sendgrid:
     api-key: test
+app:
+  email:
+    enabled: true
+    default-email: "info@theinfluencers.com"
+  push:
+    enabled: true
 logging:
   level:
-    root: DEBUG
+    com.agenatech: DEBUG
 springdoc.api-docs.path: /api/v1/notification-service/api-doc
 management:
   endpoints:
