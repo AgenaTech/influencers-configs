@@ -9,6 +9,16 @@ spring:
             - Method=POST,GET,PUT,PATCH,DELETE
           filters:
             - AddPrincipalToPathFilter
+        - id: profiles-brand
+          uri: http://profiles
+          predicates:
+            - Path=/api/v1/brands/me
+            - Method=POST,GET,PUT,PATCH,DELETE
+          filters:
+            - AddPrincipalToPathFilter
+          metadata:
+            auth-roles:
+              - brand
         - id: social-media-adapter
           uri: http://social-media-adapter
           predicates:
