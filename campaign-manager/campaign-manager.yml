@@ -22,8 +22,9 @@ external-hal-links:
     brands: /api/v1/campaigns/{?campaignId}/brands
 profiles:
   url: http://localhost:8080
-  ratings-url: api/v1/ratings
-  brands-search-by-ids-url: api/v1/brands/search/by-ids?ids={idsList}
+  ratings-url: /api/v1/ratings
+  brands-search-by-ids-url: /api/v1/brands/search/by-ids?ids={idsList}
+  brands-url: /api/v1/brands/{id}
 notifications:
   url: http://localhost:9095
   email-url: /api/v1/emails
