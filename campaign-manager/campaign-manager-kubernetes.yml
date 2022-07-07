@@ -14,3 +14,14 @@ profiles:
   url: http://profiles
 notifications:
   url: http://notification-service
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: basic
+
+logging:
+  level:
+    com.agenatech: DEBUG
+    org.hibernate: ERROR
